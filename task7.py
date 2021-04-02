@@ -14,19 +14,18 @@
 Подсказка: использовать менеджеры контекста.
 """
 import json
-from typing import TextIO
 
 with open('enterprises.txt', 'r') as in_f:
     firms = [x[:-1].split('\t') for x in in_f]
     print(firms)
-l = [x for x in [int(item[-2]) - int(item[-1]) for item in firms] if x >= 0]
-average_profit = {'average_profit': sum(l) / len(l)}
+profit_list = [x for x in [int(item[-2]) - int(item[-1]) for item in firms] if x >= 0]
+average_profit = {'average_profit': sum(profit_list) / len(profit_list)}
 profit_dict = dict()
 for item in firms:
-    item.append(int(item[-2]) - int(item[-1]))
+    print(item)
+    item.append(int(item[2]) - int(item[3]))
     profit_dict.update({item[0]: item[-1]})
 res = [profit_dict, average_profit]
 print(res)
-json_f: TextIO
 with open('task7_file.json', 'w') as json_f:
     json.dump(res, json_f)

@@ -1,0 +1,4 @@
+Chamomile	JSC	2000	2200
+IB Pupkin	IB	800	500
+RND Center	FGUE	5000	4900
+Hardroughmet	JSC	50000	39000
