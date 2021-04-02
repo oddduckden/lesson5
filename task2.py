@@ -5,6 +5,6 @@
 f = open('out_task1.txt', 'r')
 source_list = [list(x.split()) for x in f.readlines()]
 f.close()
-print('Число строк: ', len(source_list))
+# print('Число строк: ', len(source_list))
 for i in source_list:
     print(f'В строке "', ' '.join(i), '" слов: ', len(i), sep ='')
