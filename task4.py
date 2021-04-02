@@ -20,6 +20,7 @@ def parser(next_string: str):
     return ' '.join(el)
 
 
+
 in_f = open('numbers.txt', 'r')
 out_f = open('result.txt', 'w')
 for line in in_f:
