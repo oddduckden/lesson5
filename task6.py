@@ -59,7 +59,7 @@ def parser(in_str):
 
 with open('subjects.txt', 'r') as subj:
     subj_list = subj.readlines()
-print(subj_list)
+# print(subj_list)
 total = dict()
 for el in subj_list:
     r = parser(el)
