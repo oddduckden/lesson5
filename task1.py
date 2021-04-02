@@ -8,7 +8,7 @@ try:
         out_f.write(x + '\n')
 finally:
     out_f.close()
-# another
+# first
 try:
     out_str = [x + '\n' for x in iter(lambda: input('введите строку: '), '')]
     out_f = open('out_task1.txt', 'a')
