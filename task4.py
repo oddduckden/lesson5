@@ -19,7 +19,7 @@ def parser(next_string: str):
     el[0] = number_dictionary(int(el[-1]))
     return ' '.join(el)
 
-# first
+
 in_f = open('numbers.txt', 'r')
 out_f = open('result.txt', 'w')
 for line in in_f:
