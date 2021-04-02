@@ -9,7 +9,7 @@ def salary(s):
     person: list = s.split()
     return person[0][:-1], int(person[1])
 
-# first
+
 with open('staff.txt') as f:
     staff_list = [salary(x) for x in f.readlines()]
 print(staff_list)
