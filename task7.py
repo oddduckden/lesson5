@@ -22,7 +22,6 @@ profit_list = [x for x in [int(item[-2]) - int(item[-1]) for item in firms] if x
 average_profit = {'average_profit': sum(profit_list) / len(profit_list)}
 profit_dict = dict()
 for item in firms:
-    print(item)
     item.append(int(item[2]) - int(item[3]))
     profit_dict.update({item[0]: item[-1]})
 res = [profit_dict, average_profit]
