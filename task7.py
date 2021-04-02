@@ -26,5 +26,5 @@ for item in firms:
     profit_dict.update({item[0]: item[-1]})
 res = [profit_dict, average_profit]
 print(res)
-with open('task7_file.json', 'w') as json_file:
-    json.dump(res, json_file)
+with open('task7_file.json', 'w') as json_f:
+    json.dump(res, json_f)
