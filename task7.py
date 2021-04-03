@@ -15,7 +15,7 @@
 """
 import json
 
-with open('enterprises.txt', 'r') as in_f:
+with open('enterprises_rus.txt', 'r') as in_f:
     firms = [x[:-1].split('\t') for x in in_f]
     print(firms)
 profit_list = [x for x in [int(item[-2]) - int(item[-1]) for item in firms] if x >= 0]
